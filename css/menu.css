@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('./font/Lobster.otf') format('otf');
+}
+
+body {
+	margin: 0px 0px 0px 0px;
+}
+
+header {
+	margin: 0px 0px 0px 0px;
+}
+
+.menu {
+	background-color: rgb(31, 51, 27);
+}
+
+h1 {
+	font-family: 'Lobster';
+	margin: 0px 0px 0px 0px;
+	padding: 5px 5px 5px 5px;
+}
