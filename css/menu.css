@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Lobster';
-    src: url('./font/Lobster.otf') format('otf');
+    font-family: "Lobster";
+    src: url('../font/Lobster.otf') format('otf');
 }
 
 body {
@@ -13,10 +13,59 @@ header {
 
 .menu {
 	background-color: rgb(31, 51, 27);
+	text-align: center;
 }
 
 h1 {
-	font-family: 'Lobster';
+	font-family: "Lobster";
 	margin: 0px 0px 0px 0px;
 	padding: 5px 5px 5px 5px;
+}
+
+.containerMenu {
+	display: flex;
+	justify-content: center;
+}
+
+.onglet a {
+	transition: background-color 0.2s ease;
+	color: white;
+	text-decoration: none;
+	font-size: 2em;
+	padding: 6px 6px 6px 6px;
+}
+
+
+.onglet a:hover, .sousMenu:hover {
+	color: yellow;
+	background-color: rgb(60, 80, 56);
+}
+
+.onglet a:active {
+	background-color: #508550;
+}
+
+.onglet {
+	margin: 6px 6px 6px 6px;
+}
+
+.sousMenu {
+	display: none;
+	position: absolute;
+	background-color: rgb(31, 51, 27);
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 0;
+	padding-top: 10px;
+}
+
+.sousMenu li {
+	color: white;
+	padding: 6px 6px 6px 6px;
+	font-size: 2em;
+}
+
+.onglet:hover .sousMenu {
+	display: block;
 }
