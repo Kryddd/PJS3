@@ -1,12 +1,17 @@
+/* Polices */
+
+/* Titre */
 @font-face {
-    font-family: "Lobster";
-    src: url('../font/Lobster.otf') format('otf');
+    font-family: 'Lobster';
+    src: url('../font/Lobster-Regula.ttf'),
+    	 url('../font/Lobster.otf');
 }
 
+/* Background */
 body {
 	margin: 0px 0px 0px 0px;
 	
-	background : url("bg_accueil.jpg") no-repeat;
+	background : url("../img/bg_accueil.jpg") no-repeat;
 	background-size : cover;
 }
 
@@ -20,10 +25,24 @@ header {
 	color : white;
 }
 
-h1 {
-	font-family: "Lobster";
+/* En-tête menu */
+.headMenu {
+	display: flex;
+	justify-content: center;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+
+.headMenu h1 {
+	font-family: "Lobster", serif;
+	font-size: 2em;
+	color: white;
 	margin: 0px 0px 0px 0px;
 	padding: 5px 5px 5px 5px;
+}
+
+.headMenu h1:hover {
+	color: yellow;
 }
 
 .containerMenu {
@@ -32,7 +51,8 @@ h1 {
 }
 
 .onglet a {
-	transition: background-color 0.2s ease;
+	transition: background-color 0.4s ease;
+	transition: color 0.4s ease;
 	color: white;
 	text-decoration: none;
 	font-size: 2em;
@@ -43,10 +63,6 @@ h1 {
 .onglet a:hover, .sousMenu:hover {
 	color: #FFCB60;
 	background-color: rgb(60, 80, 56);
-}
-
-.onglet a:active {
-	background-color: #508550;
 }
 
 .onglet {
@@ -73,4 +89,3 @@ h1 {
 .onglet:hover .sousMenu {
 	display: block;
 }
-
