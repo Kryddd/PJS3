@@ -5,6 +5,9 @@
 
 body {
 	margin: 0px 0px 0px 0px;
+	
+	background : url("bg_accueil.jpg") no-repeat;
+	background-size : cover;
 }
 
 header {
@@ -15,10 +18,6 @@ header {
 	background-color: #27331B;
 	text-align: center;
 	color : white;
-}
-
-.headMenu h1{
-	color:white;
 }
 
 h1 {
@@ -68,9 +67,10 @@ h1 {
 .sousMenu li {
 	color: white;
 	padding: 6px 6px 6px 6px;
-	font-size: 0.7em;
+	font-size: 1em;
 }
 
 .onglet:hover .sousMenu {
 	display: block;
 }
+
