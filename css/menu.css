@@ -41,6 +41,7 @@ header {
 	color: white;
 	margin: 0px 0px 0px 0px;
 	padding: 5px 5px 5px 5px;
+    transition: color 0.4s ease;
 }
 
 .headMenu h1:hover {
@@ -61,14 +62,18 @@ header {
 	padding: 6px 6px 6px 6px;
 }
 
+.currentOnglet {
+    background-color: rgb(78, 102, 64);
+}
 
 .onglet a:hover, .sousMenu:hover {
 	color: #FFCB60;
-	background-color: rgb(60, 80, 56);
+	background-color: rgb(78, 102, 64);
 }
 
 .onglet {
-	margin: 6px 6px 6px 6px;
+	
+    padding: 6px 6px 6px 6px;
 }
 
 .sousMenu {
