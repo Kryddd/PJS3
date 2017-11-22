@@ -12,12 +12,9 @@ header {
 }
 
 .menu {
-	background-color: rgb(31, 51, 27);
+	background-color: #27331B;
 	text-align: center;
-}
-
-.headMenu h1{
-	color:white;
+	color : white;
 }
 
 h1 {
@@ -41,7 +38,7 @@ h1 {
 
 
 .onglet a:hover, .sousMenu:hover {
-	color: yellow;
+	color: #FFCB60;
 	background-color: rgb(60, 80, 56);
 }
 
@@ -67,7 +64,7 @@ h1 {
 .sousMenu li {
 	color: white;
 	padding: 6px 6px 6px 6px;
-	font-size: 2em;
+	font-size: 0.7em;
 }
 
 .onglet:hover .sousMenu {
