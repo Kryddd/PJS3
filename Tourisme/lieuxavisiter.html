@@ -3,12 +3,44 @@
     <head>
         <meta charset="utf-8">
         <title>Lieux à visiter</title>
-        <link rel="stylesheet" href="css/styleCSS.css"/>
+        <link rel="stylesheet" href="css/styleGlobal.css"/>
+		<link rel="stylesheet" href="css/menu.css"/>
 		<link rel="stylesheet" href="css/lieuxavisiter.css"/>
     </head>
     <body>
-		<img src="img/logo_guyane_bon.png" alt="logo">
-		<div id="header">
+		<header>
+			<div class="menu">
+				<div class="headMenu">
+					<img src="img/logo_guyane_bon.png" alt="Logo">
+					<h1>Guyane Tour</h1>
+				</div>
+				<div class="containerMenu">
+					<div class="onglet">
+						<a href="accueil.html">ACCUEIL</a>
+					</div>
+					<div class="onglet">
+						<a href="#">RESTAURATION</a>
+						<ul class="sousMenu">
+							<li><a href="Restauration/gastronomie.html">Gastronomie</a></li>
+						</ul>
+					</div>
+					<div class="onglet">
+						<a href="#">TOURISME</a>
+						<ul class="sousMenu">
+							<li><a href="Tourisme/lieuxavisiter.html">Lieux &agrave; visiter</a></li>
+						</ul>
+					</div>
+					<div class="onglet">
+						<a href="Patrimoine/patrimoine.html">LE PATRIMOINE</a>
+						<ul class="sousMenu">
+							<li><a href="Patrimoine/patrimoine_naturel.html">Patrimoine naturel</a></li>
+							<li><a href="#">Patrimoine culturel</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="hautPage">
 			<h1>Notre sélection de lieux incontournables</h1>
 			<br>
 			<p> La Guyane est un vaste territoire, ce qui rend sa découverte longue et difficile.<br>               
@@ -18,7 +50,7 @@
 		<h2 id="contenu">La réserve naturelle de Kaw-Roura</h2>
 		<div class="blocDiapo">
 			<div class="diapo scroll">
-				<div class="txtDiapo">Cette splendide réserve naturelle grande de 100 000 hectares,
+				<div class="txtDiapoKR">Cette splendide réserve naturelle grande de 100 000 hectares,
 				est un des lieux phares de la Guyane.</div>
 				<!-- rajouter les flèches-->
 				<img src="img/lieuxavisiter1.jpg" style="width:100%">
