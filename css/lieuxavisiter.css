@@ -24,6 +24,10 @@
 	margin:auto;
 	border:5px solid #009933;
 	margin-bottom:15px;
+}
+
+.diapo{
+	margin:0;
 	padding:0;
 }
 
@@ -32,6 +36,7 @@
 	font-size:20px;
 	margin-left:20px;
 	margin-right:20px;
+	margin-bottom:20px;
 	position:absolute;
 	bottom:0;
 	background: rgba(112,112,112,0.3);
@@ -44,9 +49,43 @@
 	background-color:#bbbbbb;
 	border-radius:50%;
 	display:inline-block;
-	transition: background-color 0.6s ease;
+	transition: background-color 0.6s ease,;
 }
 
 .actif{
-	background-color:#717171;
+	height:10px;
+	width:10px;
+	background-color:white;
+	border:3px solid black;
+}
+
+#Arrows{
+	display: flex;
+	justify-content: space-between;
+	height: 30px;
+	position: absolute;
+	width: 600px;
+}
+
+#Arrows i{
+	background-color: rgba(255, 255, 255, .25);
+	color: #1C1D21;
+	cursor: pointer;
+	height: 30px;
+	padding: 15px;
+
+	transition: background-color .5s, color .5s;
+}
+
+#Arrows i:first-of-type{ 
+	padding-right: 20px;
+}
+
+#Arrows i:last-of-type{ 
+	padding-left: 20px;
+}
+
+#Arrows i:hover{
+	background-color: rgba(28,29,33, .75);
+	color: #EEEFF7;
 }
