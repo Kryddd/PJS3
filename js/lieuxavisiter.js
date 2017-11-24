@@ -1,10 +1,11 @@
 var diapoIndex = 0;
-afficherDiapo();
+var diapos = document.getElementsByClassName("diapo");
+var points = document.getElementsByClassName("point");
+afficherDiapo(diapoIndex);
 
-function afficherDiapo(){
+function afficherDiapo(diapoIndex){
 	var i;
-	var diapos = document.getElementsByClassName("diapo");
-	var points = document.getElementsByClassName("point");
+	
 	for (i = 0; i < diapos.length; i++) {
 		diapos[i].style.display = "none";
 	}
@@ -17,5 +18,19 @@ function afficherDiapo(){
 	}
 	diapos[diapoIndex-1].style.display = "block";
 	points[diapoIndex-1].className += " actif";
-	setTimeout(afficherDiapo, 2000);
+	setTimeout(afficherDiapo, 3000,diapoIndex);
+}
+
+function diapoSuivante(){
+	diapos[diapoIndex].style.display = "none";
+	points[diapoIndex].className = points[diapoIndex].className.replace(" actif", "");
+	diapos[diapoIndex+1].style.display = "block";
+	points[diapoIndex+1].className += " actif";
+}
+
+function diapoPrecedente(){
+	diapos[diapoIndex].style.display = "none";
+	points[diapoIndex].className = points[diapoIndex].className.replace(" actif", "");
+	diapos[diapoIndex-1].style.display = "block";
+	points[diapoIndex-1].className += " actif";
 }
