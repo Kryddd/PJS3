@@ -3,7 +3,7 @@
 	padding:0;
 }
 
-#contenu{
+#page{
 	padding-left:15%;
 }
 
@@ -59,33 +59,34 @@
 	border:3px solid black;
 }
 
-#Arrows{
+.Arrows{
 	display: flex;
 	justify-content: space-between;
 	height: 30px;
+	top:50%;
 	position: absolute;
-	width: 600px;
+	width: 700px;
 }
 
-#Arrows i{
-	background-color: rgba(255, 255, 255, .25);
+.Arrows i{
+	background-color: rgba(255, 255, 255, .50);
 	color: #1C1D21;
-	cursor: pointer;
 	height: 30px;
-	padding: 15px;
+	padding-top: 15px;
+	padding-bottom : 30px;
 
 	transition: background-color .5s, color .5s;
 }
 
-#Arrows i:first-of-type{ 
+.Arrows i:first-of-type{ 
 	padding-right: 20px;
 }
 
-#Arrows i:last-of-type{ 
+.Arrows i:last-of-type{ 
 	padding-left: 20px;
 }
 
-#Arrows i:hover{
+.Arrows i:hover{
 	background-color: rgba(28,29,33, .75);
 	color: #EEEFF7;
 }
