@@ -3,19 +3,18 @@
     <head>
         <meta charset="utf-8">
         <title>Lieux à visiter</title>
-        <link rel="stylesheet" href="css/styleGlobal.css"/>
-		<link rel="stylesheet" href="css/menu.css"/>
-		<link rel="stylesheet" href="css/lieuxavisiter.css"/>
+        <link rel="stylesheet" href="../css/styleGlobal.css"/>
+		<link rel="stylesheet" href="../css/menu.css"/>
+		<link rel="stylesheet" href="../css/lieuxavisiter.css"/>
     </head>
-    <body>
 		<header>
 			<div class="menu">
 				<div class="headMenu">
-					<img src="img/logo_guyane_bon.png" alt="Logo">
+					<img src="../img/logo_petit.png" alt="Logo">
 					<h1>Guyane Tour</h1>
 				</div>
 				<div class="containerMenu">
-					<div class="onglet">
+					<div class="onglet currentOnglet">
 						<a href="accueil.html">ACCUEIL</a>
 					</div>
 					<div class="onglet">
@@ -40,44 +39,45 @@
 				</div>
 			</div>
 		</header>
-		<div id="hautPage">
-			<h1>Notre sélection de lieux incontournables</h1>
+		<body>
+			<div id="hautPage">
+				<h1>Notre sélection de lieux incontournables</h1>
+				<br>
+				<p> La Guyane est un vaste territoire, ce qui rend sa découverte longue et difficile.<br>               
+					Grâce à notre sélection, découvrez les meilleurs lieux de ce pays pour organiser votre séjour!</p>
+			</div>
 			<br>
-			<p> La Guyane est un vaste territoire, ce qui rend sa découverte longue et difficile.<br>               
-				Grâce à notre sélection, découvrez les meilleurs lieux de ce pays pour organiser votre séjour!</p>
-		</div>
-		<br>
-		<h2 id="contenu">La réserve naturelle de Kaw-Roura</h2>
-		<div class="blocDiapo">
-			<div class="diapo scroll">
-				<div class="txtDiapoKR">Cette splendide réserve naturelle grande de 100 000 hectares,
-				est un des lieux phares de la Guyane.</div>
-				<div id="Arrows">
-					<i id="Prev" class="fa fa-chevron-left fa-2x" aria-hidden="true" onclick="diapoPrecedente()"></i>
-					<i id="Next" class="fa fa-chevron-right fa-2x" aria-hidden="true" onclick="diapoSuivante()"></i>
+			<h2 id="page">La réserve naturelle de Kaw-Roura</h2>
+			<div class="blocDiapo">
+				<div class="diapo scroll">
+					<div class="txtDiapoKR">Cette splendide réserve naturelle grande de 100 000 hectares,
+					est un des lieux phares de la Guyane.</div>
+					<div class="Arrows">
+						<i id="Prev" onclick="diapoPrecedente()"><img src="../img/leftArrow.png" style="width:100%"></i>
+						<i id="Next" class="fa fa-chevron-right fa-2x" aria-hidden="true" onclick="diapoSuivante()"></i>
+					</div>
+					<img src="../img/lieuxavisiter1.jpg" style="width:100%">
 				</div>
-				<img src="img/lieuxavisiter1.jpg" style="width:100%">
-			</div>
-			<div class="diapo scroll">
-				<div id="Arrows">
-					<i id="Prev" class="fa fa-chevron-left fa-2x" aria-hidden="true" onclick="diapoPrecedente()"></i>
-					<i id="Next" class="fa fa-chevron-right fa-2x" aria-hidden="true" onclick="diapoSuivante()"></i>
+				<div class="diapo scroll">
+					<div class="Arrows">
+						<i id="Prev" class="fa fa-chevron-left fa-2x" aria-hidden="true" onclick="diapoPrecedente()"></i>
+						<i id="Next" class="fa fa-chevron-right fa-2x" aria-hidden="true" onclick="diapoSuivante()"></i>
+					</div>
+					<img src="../img/lieuxavisiter2.jpg" style="width:100%">
 				</div>
-				<img src="img/lieuxavisiter2.jpg" style="width:100%">
-			</div>
-			<div class="diapo scroll">
-				<div id="Arrows">
-					<i id="Prev" class="fa fa-chevron-left fa-2x" aria-hidden="true" onclick="diapoPrecedente()"></i>
-					<i id="Next" class="fa fa-chevron-right fa-2x" aria-hidden="true" onclick="diapoSuivante()"></i>
+				<div class="diapo scroll">
+					<div class="Arrows">
+						<i id="Prev" class="fa fa-chevron-left fa-2x" aria-hidden="true" onclick="diapoPrecedente()"></i>
+						<i id="Next" class="fa fa-chevron-right fa-2x" aria-hidden="true" onclick="diapoSuivante()"></i>
+					</div>
+					<img src="../img/lieuxavisiter3.jpg" style="width:100%">
 				</div>
-				<img src="img/lieuxavisiter3.jpg" style="width:100%">
 			</div>
-		</div>
-		<div style="text-align:center">
-			<span class="point"></span> 
-			<span class="point"></span> 
-			<span class="point"></span> 
-		</div>
-		<script src="js/lieuxavisiter.js"></script>
-    </body>
+			<div style="text-align:center">
+				<span class="point"></span> 
+				<span class="point"></span> 
+				<span class="point"></span> 
+			</div>
+			<script src="../js/lieuxavisiter.js"></script>
+		</body>
 </html>
