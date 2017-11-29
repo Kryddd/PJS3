@@ -1,28 +1,50 @@
 
-body{
-	color: black;
-	margin: 0% 25% 0% 25%;
-	text-align: justify;
-}
-
-h1 {
-	color: orange;	
-	text-align: center;
-}
-
 #piment{
 	float: right;
+	display: flex;
 }
 
-p {
-	font-size: 20px;
+#bouillon{
+	float: right;
+	display: flex;
+	margin-bottom: 50px;
 }
 
-h2 {
-	font-size : 21px;
-	margin: 0% 5% 0% 5%;
+.sideTextImg p {
+	padding-right: 1vw;
+	padding-top: 6vh;
 }
 
-image{
-	width= 100px
+.sideImgText p {
+	padding-left: 1vw;
+	padding-top: 10vh;
+}
+
+@media all and (max-width : 1500px)
+{
+	#piment{
+		display: inline;
+		margin-bottom: 2vh;
+	}
+	
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#bouillon{
+		display: inline;
+		margin-bottom: 2vh;
+	}
+
+	.sideTextImg p {
+	padding-right: 1vw;
+	padding-top: 1vh;
+	}
+
+	.sideImgText p {
+	padding-left: 1vw;
+	padding-top: 1vh;
+	}
 }

@@ -1,0 +1,173 @@
+/* Polices */
+
+/* Titre */
+@font-face {
+    font-family: 'Lobster';
+    src: url('../font/Lobster-Regular.ttf'),
+    	 url('../font/Lobster.otf');
+}
+
+/* MEDIA QUERY ALL */
+
+/* Background */
+body {
+	margin: 0px 0px 0px 0px;
+	
+	background : url("../img/bg_accueil.jpg") no-repeat;
+	background-size : cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+header {
+	margin: 0px 0px 0px 0px;
+}
+
+.menu {
+	background-color: #27331B;
+	text-align: center;
+	color : white;
+}
+
+/* En-tête menu */
+.headMenu {
+	display: flex;
+	justify-content: center;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+
+.headMenu h1 {
+	font-family: "Lobster", serif;
+	font-size: 2em;
+	color: white;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 5px 5px 5px;
+    transition: color 0.4s ease;
+}
+
+.headMenu h1:hover {
+	color: yellow;
+}
+
+.containerMenu {
+	display: flex;
+	justify-content: center;
+}
+
+.onglet a {
+	transition: background-color 0.4s ease;
+	transition: color 0.4s ease;
+	color: white;
+	text-decoration: none;
+	font-size: 2em;
+	padding: 6px 6px 6px 6px;
+}
+
+.currentOnglet {
+    background-color: rgb(78, 102, 64);
+}
+
+.onglet a:hover, .sousMenu:hover {
+	color: #FFCB60;
+	background-color: rgb(78, 102, 64);
+}
+
+.onglet {
+	
+    padding: 6px 6px 6px 6px;
+}
+
+.sousMenu {
+	display: none;
+	position: absolute;
+	background-color: rgb(31, 51, 27);
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 0;
+	padding-top: 10px;
+}
+
+.sousMenu li {
+	color: white;
+	padding: 6px 6px 6px 6px;
+	font-size: 1em;
+}
+
+.onglet:hover .sousMenu {
+	display: block;
+}
+
+.panel {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-top: 20vh;
+	margin-left: 5vh;
+	margin-right: 5vh;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.panel h2 {
+	font-size: 2em;
+	color: white;
+	text-align: center;
+}
+
+.panel p {
+	font-size: 2em;
+	text-align: left;
+}
+
+/* MEDIA QUERY MD */
+@media all and (min-width: 1024px) {
+	.panel {
+		margin-top: 20vh;
+		margin-left: 10vh;
+		margin-right: 10vh;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+	}
+
+	.headerMenu {
+		justify-content: center;
+	}
+}
+
+/* MEDIA QUERY SM */
+@media all and (min-width: 512px) and (max-width: 1024px) {
+	.panel {
+		margin-top: 5vh;
+		margin-right: 2vh;
+		margin-left: 2vh;
+		padding-top: 1vh;
+		padding-bottom: 1vh;
+	}
+
+	.menu {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.headerMenu {
+		justify-content: flex-start;
+	}
+
+	.containerMenu {
+		flex-direction: column;
+		display: none;
+	}
+}
+
+/* MEDIA QUERY XS */
+@media all and (max-width: 512px) {
+	.panel {
+		margin-top: 2vh;
+		margin-right: 0vh;
+		margin-left: 0vh;
+		padding-top: 1vh;
+		padding-bottom: 1vh;
+	}
+}
