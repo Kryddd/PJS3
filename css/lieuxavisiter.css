@@ -69,24 +69,25 @@
 }
 
 .Arrows i{
-	background-color: rgba(255, 255, 255, .50);
+	/*background-color: rgba(255, 255, 255, .50);*/
 	color: #1C1D21;
 	height: 30px;
-	padding-top: 15px;
-	padding-bottom : 30px;
+	padding-top: 10px;
+	padding-bottom : 20px;
+	border-radius: 50px;
 
 	transition: background-color .5s, color .5s;
 }
 
 .Arrows i:first-of-type{ 
-	padding-right: 20px;
+	padding-right: 10px;
 }
 
 .Arrows i:last-of-type{ 
-	padding-left: 20px;
+	padding-left: 10px;
 }
 
 .Arrows i:hover{
-	background-color: rgba(28,29,33, .75);
+	background-color: rgba(28,29,33, 1);
 	color: #EEEFF7;
 }
