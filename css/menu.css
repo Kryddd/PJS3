@@ -13,7 +13,7 @@
 body {
 	margin: 0px 0px 0px 0px;
 	
-	background : url("../img/bg_accueil.jpg") no-repeat;
+	
 	background-size : cover;
 	background-position: center center;
 	background-attachment: fixed;
@@ -50,10 +50,6 @@ header {
 	color: yellow;
 }
 
-.containerMenu {
-	display: flex;
-	justify-content: center;
-}
 
 .onglet a {
 	transition: background-color 0.4s ease;
@@ -143,6 +139,10 @@ header {
 	.buttonMenu {
 		display: none;
 	}
+	.containerMenu {
+	display: flex;
+	justify-content: center;
+}
 }
 
 /* MEDIA QUERY SM */
@@ -165,7 +165,7 @@ header {
 		justify-content: flex-start;
 	}
 
-	.containerMenu {
+	.containerMenu :not(.smallNav) {
 		flex-direction: column;
 		display: none;
 	}
@@ -173,10 +173,6 @@ header {
 	.containerMenu .smallNav {
 		display: block;
 	}
-}
-
-@media all and (min-width: 512px) and (max-width: 1024px) {
-	
 }
 
 /* MEDIA QUERY XS */
@@ -187,5 +183,20 @@ header {
 		margin-left: 0vh;
 		padding-top: 1vh;
 		padding-bottom: 1vh;
+	}
+
+	.menu {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.headerMenu {
+		justify-content: flex-start;
+	}
+
+	.containerMenu {
+		flex-direction: column;
+		display: none;
 	}
 }
