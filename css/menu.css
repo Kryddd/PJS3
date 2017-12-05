@@ -64,6 +64,12 @@ header {
 	padding: 6px 6px 6px 6px;
 }
 
+.icon {
+	color: white;
+	text-decoration: none;
+	font-size: 2em;
+}
+
 .currentOnglet {
     background-color: rgb(78, 102, 64);
 }
@@ -133,6 +139,10 @@ header {
 	.headerMenu {
 		justify-content: center;
 	}
+
+	.buttonMenu {
+		display: none;
+	}
 }
 
 /* MEDIA QUERY SM */
@@ -159,6 +169,14 @@ header {
 		flex-direction: column;
 		display: none;
 	}
+
+	.containerMenu .smallNav {
+		display: block;
+	}
+}
+
+@media all and (min-width: 512px) and (max-width: 1024px) {
+	
 }
 
 /* MEDIA QUERY XS */
