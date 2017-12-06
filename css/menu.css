@@ -12,7 +12,9 @@
 /* Background */
 body {
 	margin: 0px 0px 0px 0px;
-	
+	background-size : cover;
+	background-position: center center;
+	background-attachment: fixed;
 }
 
 header {

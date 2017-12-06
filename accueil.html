@@ -1,19 +1,24 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="fr">
 	<head>
-		<title>Accueil</title>
-		<link rel="icon" type="image/png" href="favicon.png" />
-		<link rel="stylesheet" href="menu.css">
+		<title>Menu</title>
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" href="css/styleGlobal.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/accueil.css">
 	</head>
 	<body>
 		<header>
 			<div class="menu">
 				<div class="headMenu">
-					<h1><img src="logo_guyane_bon.png" alt="Logo" height="68" width="117">
-					Guyane Tour</h1>
+					<img src="img/logo_petit.png" alt="Logo">
+					<h1>Guyane Tour</h1>
 				</div>
-				<div class="containerMenu">
-					<div class="onglet">
+				<div class="buttonMenu">
+					<a href="javascript:void(0);" class="icon" onclick="unroll()">&#9776;</a>
+				</div>
+				<div class="containerMenu" id="menu">
+					<div class="onglet currentOnglet">
 						<a href="accueil.html">ACCUEIL</a>
 					</div>
 					<div class="onglet">
@@ -38,7 +43,10 @@
 				</div>
 			</div>
 		</header>
-
-	
-	</body>	
+		<div class="panel">
+			<h2>Venez d&eacute;couvrir la Guyane : Une contr&eacute;e sauvage et myst&eacute;rieuse.</h2>
+			<p>Partez &agrave; la d&eacute;couverte de son patrimoine culturel mais &eacute;galement &agrave; la d&eacute;couverte de son environnement des plus impressionnants. </p>
+		</div>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
 </html>

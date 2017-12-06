@@ -5,7 +5,7 @@ afficherDiapo();
 
 function afficherDiapo(){
 	changerDiapo();
-	setTimeout(afficherDiapo, 3000,diapoIndex);
+	setTimeout(afficherDiapo, 3000);
 }
 
 function changerDiapo(){
@@ -24,6 +24,8 @@ function changerDiapo(){
 	}
 	diapos[diapoIndex-1].style.display = "block";
 	points[diapoIndex-1].className += " actif";
+	
+	//afficherDiapo(5000);
 }
 
 function diapoSuivante(){
