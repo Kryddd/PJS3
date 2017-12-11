@@ -1,9 +1,9 @@
 function unroll() {
 	var nav = document.getElementById("menu");
-	if(nav.className === "containerMenu") {
-		nav.className += " smallNav"
+	if(nav.style.display !== "none") {
+		nav.style.display = "none"
 	}
 	else {
-		nav.className = "containerMenu";
+		nav.style.display = "block";
 	}
 }

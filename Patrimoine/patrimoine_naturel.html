@@ -16,8 +16,11 @@
 					<img src="../img/logo_petit.png" alt="Logo">
 					<h1>Guyane Tour</h1>
 				</div>
-				<div class="containerMenu">
-					<div class="onglet">
+				<div class="buttonMenu">
+					<a href="javascript:void(0);" class="icon" onclick="unroll();">&#9776;</a>
+				</div>
+				<div class="containerMenu" id="menu" style="display: none;">
+					<div class="onglet currentOnglet">
 						<a href="../accueil.html">ACCUEIL</a>
 					</div>
 					<div class="onglet">
@@ -32,11 +35,11 @@
 							<li><a href="../Tourisme/lieuxavisiter.html">Lieux &agrave; visiter</a></li>
 						</ul>
 					</div>
-					<div class="onglet currentOnglet">
-						<a href="Patrimoine/patrimoine.html">LE PATRIMOINE</a>
+					<div class="onglet">
+						<a href="../Patrimoine/patrimoine.html">LE PATRIMOINE</a>
 						<ul class="sousMenu">
-							<li><a href="patrimoine_naturel.html">Patrimoine naturel</a></li>
-							<li><a href="#">Patrimoine culturel</a></li>
+							<li><a href="../Patrimoine/patrimoine_naturel.html">Patrimoine naturel</a></li>
+							<li><a href="../Patrimoine/patrimoine_culturel.html">Patrimoine culturel</a></li>
 						</ul>
 					</div>
 				</div>
@@ -63,5 +66,6 @@
 				<p>Vous pourrez aussi observer des caïmans dans certains fleuves de Guyane qui sont caractérisé par leur longueur pouvant atteindre en moyenne  6 à 7 mètres et un poids maximum de 1300 kg.</p>
 			</div>
 		</div>
+		<script type="text/javascript" src="../js/script.js"></script>
 	</body>
 </html>

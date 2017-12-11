@@ -8,13 +8,18 @@
 		<link rel="stylesheet" href="../css/diapo.css"/>
 		<link rel="stylesheet" href="../css/lieuxavisiter.css"/>
     </head>
+		
+	<body>
 		<header>
 			<div class="menu">
 				<div class="headMenu">
 					<img src="../img/logo_petit.png" alt="Logo">
 					<h1>Guyane Tour</h1>
 				</div>
-				<div class="containerMenu">
+				<div class="buttonMenu">
+					<a href="javascript:void(0);" class="icon" onclick="unroll();">&#9776;</a>
+				</div>
+				<div class="containerMenu" id="menu" style="display: none;">
 					<div class="onglet currentOnglet">
 						<a href="../accueil.html">ACCUEIL</a>
 					</div>
@@ -27,54 +32,53 @@
 					<div class="onglet">
 						<a href="#">TOURISME</a>
 						<ul class="sousMenu">
-							<li><a href="lieuxavisiter.html">Lieux &agrave; visiter</a></li>
+							<li><a href="../Tourisme/lieuxavisiter.html">Lieux &agrave; visiter</a></li>
 						</ul>
 					</div>
 					<div class="onglet">
-						<a href="Patrimoine/patrimoine.html">LE PATRIMOINE</a>
+						<a href="../Patrimoine/patrimoine.html">LE PATRIMOINE</a>
 						<ul class="sousMenu">
 							<li><a href="../Patrimoine/patrimoine_naturel.html">Patrimoine naturel</a></li>
-							<li><a href="#">Patrimoine culturel</a></li>
+							<li><a href="../Patrimoine/patrimoine_culturel.html">Patrimoine culturel</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</header>
-		<body>
-
-			<div id="page">
-				<h1>Notre sélection de lieux incontournables</h1>
-				
-				<h2> La Guyane est un vaste territoire, ce qui rend sa découverte longue et difficile.<br>               
+		<div id="page">
+			<h1>Notre sélection de lieux incontournables</h1>
+			
+			<h2> La Guyane est un vaste territoire, ce qui rend sa découverte longue et difficile.<br>               
 				Grâce à notre sélection, découvrez les meilleurs lieux de ce pays pour organiser votre séjour!</h2>
 			
-				<p>La réserve naturelle de Kaw-Roura</p>
+			<p>La réserve naturelle de Kaw-Roura</p>
 			
-				<div class="blocDiapo">
-					<div class="diapo scroll">
-						<div class="txtDiapoKR">Cette splendide réserve naturelle grande de 100 000 hectares,
+			<div class="blocDiapo">
+				<div class="diapo scroll">
+					<div class="txtDiapoKR">Cette splendide réserve naturelle grande de 100 000 hectares,
 							est un des lieux phares de la Guyane.
 						</div>
 						
-						<img src="../img/lieuxavisiter1.jpg" style="width:100%">
-					</div>
-					<div class="diapo scroll">
-						<img src="../img/lieuxavisiter2.jpg" style="width:100%">
-					</div>
-					<div class="diapo scroll">
-						<img src="../img/lieuxavisiter3.jpg" style="width:100%">
-					</div>
-					<div class="Arrows">
-							<i id="Prev" onclick="diapoPrecedente()"><img src="../img/leftArrow.png" style="width:100%"></i>
-							<i id="Next" onclick="diapoSuivante()"><img src="../img/rightArrow.png" style="width:100%"></i>
-					</div>
+					<img src="../img/lieuxavisiter1.jpg" style="width:100%">
 				</div>
-				<div style="text-align:center">
-					<span class="point"></span> 
-					<span class="point"></span> 
-					<span class="point"></span> 
+				<div class="diapo scroll">
+					<img src="../img/lieuxavisiter2.jpg" style="width:100%">
 				</div>
-				<script src="../js/slideshow.js"></script>
+				<div class="diapo scroll">
+					<img src="../img/lieuxavisiter3.jpg" style="width:100%">
+				</div>
+				<div class="Arrows">
+						<i id="Prev" onclick="diapoPrecedente()"><img src="../img/leftArrow.png" style="width:100%"></i>
+						<i id="Next" onclick="diapoSuivante()"><img src="../img/rightArrow.png" style="width:100%"></i>
+				</div>
 			</div>
-		</body>
+			<div style="text-align:center">
+				<span class="point"></span> 
+				<span class="point"></span> 
+				<span class="point"></span> 
+			</div>
+		</div>
+		<script src="../js/slideshow.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
+	</body>
 </html>

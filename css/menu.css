@@ -163,13 +163,9 @@ header {
 		justify-content: flex-start;
 	}
 
-	.containerMenu :not(.smallNav) {
+	.containerMenu {
 		flex-direction: column;
 		display: none;
-	}
-
-	.containerMenu .smallNav .onglet {
-		display: block;
 	}
 }
 
