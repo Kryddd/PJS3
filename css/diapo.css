@@ -72,10 +72,12 @@
 
 .Arrows i:first-of-type{ 
 	padding-right: 10px;
+	cursor: pointer;
 }
 
 .Arrows i:last-of-type{ 
 	padding-left: 10px;
+	cursor: pointer;
 }
 
 .Arrows i:hover{
