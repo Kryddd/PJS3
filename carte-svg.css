@@ -2,20 +2,29 @@
 	display:block;
 }
 
+.map-img {
+    float: left;
+}
+
+.map-list {
+    float: left;
+    transition: color .3s;
+}
+
 svg {
 	width: 50vw;
 	height: 50vh;
 }
 
 g {
-	stroke-width: 1;
-	stroke: black;
+	stroke-width: 1px;
+	stroke: white;
 }
 
 path {
-	fill: #cccccc;
+	fill: #a4ced3;
 	fill-opacity: 0.8;
-	transition: .6s fill;
+	transition: fill .6s;
 }
 
 path:hover {
