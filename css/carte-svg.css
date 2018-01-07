@@ -4,10 +4,6 @@
     justify-content: space-around;
 }
 
-.map-list {
-    transition: color .3s;
-}
-
 svg {
 	width: 30%;
 	height: 60%;

@@ -45,7 +45,7 @@ header {
 }
 
 .headMenu h1:hover {
-	color: yellow;
+	color: #FFCB60;
 }
 
 
@@ -99,36 +99,13 @@ header {
 	display: block;
 }
 
-.panel {
-	color: white;
-	background-color: rgba(0, 0, 0, 0.5);
-	margin-top: 20vh;
-	margin-left: 5vh;
-	margin-right: 5vh;
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-}
-
-.panel h2 {
-	font-size: 2em;
-	color: white;
-	text-align: center;
-}
-
-.panel p {
-	font-size: 2em;
-	text-align: left;
+.containerMenu {
+    display: flex;
+    justify-content: center;
 }
 
 /* MEDIA QUERY MD */
 @media all and (min-width: 1024px) {
-	.panel {
-		margin-top: 20vh;
-		margin-left: 10vh;
-		margin-right: 10vh;
-		padding-top: 5vh;
-		padding-bottom: 5vh;
-	}
 
 	.headerMenu {
 		justify-content: center;
@@ -137,21 +114,14 @@ header {
 	.buttonMenu {
 		display: none;
 	}
-	.containerMenu {
-	   display: flex;
-	   justify-content: center;
+    
+    .wrapperMenuSM {
+        display: none;
     }
 }
 
 /* MEDIA QUERY SM */
 @media all and (min-width: 512px) and (max-width: 1023px) {
-	.panel {
-		margin-top: 5vh;
-		margin-right: 2vh;
-		margin-left: 2vh;
-		padding-top: 1vh;
-		padding-bottom: 1vh;
-	}
 
 	.menu {
 		display: flex;
@@ -167,17 +137,14 @@ header {
 		flex-direction: column;
 		display: none;
 	}
+    
+    .wrapperMenuSM {
+        display: block;
+    }
 }
 
 /* MEDIA QUERY XS */
-@media all and (max-width: 512px) {
-	.panel {
-		margin-top: 2vh;
-		margin-right: 0vh;
-		margin-left: 0vh;
-		padding-top: 1vh;
-		padding-bottom: 1vh;
-	}
+@media all and (max-width: 511px) {
 
 	.menu {
 		display: flex;
@@ -193,4 +160,8 @@ header {
 		flex-direction: column;
 		display: none;
 	}
+    
+    .wrapperMenuSM {
+        display: block;
+    }
 }
