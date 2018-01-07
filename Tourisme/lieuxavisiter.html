@@ -14,36 +14,62 @@
 		<header>
 			<div class="menu">
 				<div class="headMenu">
-					<img src="../img/logo_petit.png" alt="Logo">
+                    <a href="../accueil.html"><img src="../img/logo_petit.png" alt="Logo"></a>
 					<h1>Guyane Tour</h1>
+                    <div class="buttonMenu">
+                        <a href="javascript:void(0)" class="icon" onclick="unroll();">&#9776;</a>
+                    </div>
 				</div>
-				<div class="buttonMenu">
-					<a href="javascript:void(0);" class="icon" >&#9776;</a>
-				</div>
-				<div class="containerMenu" id="menu" style="display: none;">
+				<div class="containerMenu" id="menu">
 					<div class="onglet currentOnglet">
 						<a href="../accueil.html">ACCUEIL</a>
 					</div>
 					<div class="onglet">
-						<a href="#">RESTAURATION</a>
+						<a>RESTAURATION</a>
 						<ul class="sousMenu">
 							<li><a href="../Restauration/gastronomie.html">Gastronomie</a></li>
 						</ul>
 					</div>
 					<div class="onglet">
-						<a href="#">TOURISME</a>
+						<a>TOURISME</a>
 						<ul class="sousMenu">
-							<li><a href="../Tourisme/lieuxavisiter.html">Lieux &agrave; visiter</a></li>
+							<li><a href="lieuxavisiter.html">Lieux &agrave; visiter</a></li>
 						</ul>
 					</div>
 					<div class="onglet">
-						<a href="../Patrimoine/patrimoine.html">LE PATRIMOINE</a>
+						<a>LE PATRIMOINE</a>
 						<ul class="sousMenu">
 							<li><a href="../Patrimoine/patrimoine_naturel.html">Patrimoine naturel</a></li>
 							<li><a href="../Patrimoine/patrimoine_culturel.html">Patrimoine culturel</a></li>
 						</ul>
 					</div>
 				</div>
+                <div class="wrapperMenuSM">
+                    <div class="containerMenu" id="menuSM" style="display : none;">
+                        <div class="onglet currentOnglet">
+                            <a href="../accueil.html">ACCUEIL</a>
+                        </div>
+                        <div class="onglet">
+                            <a>RESTAURATION</a>
+                            <ul class="sousMenu">
+                                <li><a href="../Restauration/gastronomie.html">Gastronomie</a></li>
+                            </ul>
+                        </div>
+                        <div class="onglet">
+                            <a>TOURISME</a>
+                            <ul class="sousMenu">
+                                <li><a href="lieuxavisiter.html">Lieux &agrave; visiter</a></li>
+                            </ul>
+                        </div>
+                        <div class="onglet">
+                            <a>LE PATRIMOINE</a>
+                            <ul class="sousMenu">
+                                <li><a href="../Patrimoine/patrimoine_naturel.html">Patrimoine naturel</a></li>
+                                <li><a href="../Patrimoine/patrimoine_culturel.html">Patrimoine culturel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 			</div>
 		</header>
 		<div id="page">
