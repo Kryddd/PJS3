@@ -138,13 +138,13 @@ header {
 		display: none;
 	}
 	.containerMenu {
-	display: flex;
-	justify-content: center;
-}
+	   display: flex;
+	   justify-content: center;
+    }
 }
 
 /* MEDIA QUERY SM */
-@media all and (min-width: 512px) and (max-width: 1024px) {
+@media all and (min-width: 512px) and (max-width: 1023px) {
 	.panel {
 		margin-top: 5vh;
 		margin-right: 2vh;

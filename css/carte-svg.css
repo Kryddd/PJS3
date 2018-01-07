@@ -1,19 +1,16 @@
-.svg-container {
-	display:block;
-}
-
-.map-img {
-    float: left;
+.maps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .map-list {
-    float: left;
     transition: color .3s;
 }
 
 svg {
-	width: 50vw;
-	height: 50vh;
+	width: 30%;
+	height: 60%;
 }
 
 g {
@@ -29,4 +26,8 @@ path {
 
 path:hover {
 	fill: darkblue;
+}
+
+#zone-guyane path {
+    fill: darkred;
 }
