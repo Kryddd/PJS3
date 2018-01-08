@@ -1,0 +1,29 @@
+.maps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+svg {
+	width: 30%;
+	height: 60%;
+}
+
+g {
+	stroke-width: 1px;
+	stroke: white;
+}
+
+path {
+	fill: #a4ced3;
+	fill-opacity: 0.8;
+	transition: fill .6s;
+}
+
+path:hover {
+	fill: darkblue;
+}
+
+#zone-guyane path {
+    fill: darkred;
+}

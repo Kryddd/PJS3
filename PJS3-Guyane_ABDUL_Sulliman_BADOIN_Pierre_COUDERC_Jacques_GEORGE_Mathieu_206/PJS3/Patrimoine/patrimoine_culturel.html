@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<title>Patrimoine culturel</title>
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" href="../css/styleGlobal.css">
+		<link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/diapo.css">
+	</head>
+	<body>
+		<header>
+			<div class="menu">
+				<div class="headMenu">
+                    <a href="../accueil.html"><img src="../img/logo_petit.png" alt="Logo"></a>
+					<h1>Guyane Tour</h1>
+                    <div class="buttonMenu">
+                        <a href="javascript:void(0)" class="icon" onclick="unroll();">&#9776;</a>
+                    </div>
+				</div>
+				<div class="containerMenu" id="menu">
+					<div class="onglet currentOnglet">
+						<a href="../accueil.html">ACCUEIL</a>
+					</div>
+					<div class="onglet">
+						<a>RESTAURATION</a>
+						<ul class="sousMenu">
+							<li><a href="../Restauration/gastronomie.html">Gastronomie</a></li>
+						</ul>
+					</div>
+					<div class="onglet">
+						<a>TOURISME</a>
+						<ul class="sousMenu">
+							<li><a href="../Tourisme/lieuxavisiter.html">Lieux &agrave; visiter</a></li>
+						</ul>
+					</div>
+					<div class="onglet">
+						<a>LE PATRIMOINE</a>
+						<ul class="sousMenu">
+							<li><a href="patrimoine_naturel.html">Patrimoine naturel</a></li>
+							<li><a href="patrimoine_culturel.html">Patrimoine culturel</a></li>
+						</ul>
+					</div>
+				</div>
+                <div class="wrapperMenuSM">
+                    <div class="containerMenu" id="menuSM" style="display : none;">
+                        <div class="onglet currentOnglet">
+                            <a href="../accueil.html">ACCUEIL</a>
+                        </div>
+                        <div class="onglet">
+                            <a>RESTAURATION</a>
+                            <ul class="sousMenu">
+                                <li><a href="../Restauration/gastronomie.html">Gastronomie</a></li>
+                            </ul>
+                        </div>
+                        <div class="onglet">
+                            <a>TOURISME</a>
+                            <ul class="sousMenu">
+                                <li><a href="../Tourisme/lieuxavisiter.html">Lieux &agrave; visiter</a></li>
+                            </ul>
+                        </div>
+                        <div class="onglet">
+                            <a>LE PATRIMOINE</a>
+                            <ul class="sousMenu">
+                                <li><a href="patrimoine_naturel.html">Patrimoine naturel</a></li>
+                                <li><a href="patrimoine_culturel.html">Patrimoine culturel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</header>
+        <div id="page">
+			<h1>Le patrimoine culturel</h1>
+            <p>Le carnaval guyanais, surement la meilleure et plus impressionnante d&eacute;monstration de la culture guyanaise. La principale particularit&eacute; de celui-ci est sa longueur, le carnaval guyanais est le plus long du monde. En effet, il d&eacute;but mi janvier et se termine d&eacute;but mars. Des multitudes de chars, danseurs et artistes s&rsquo;y retrouvent tous les ans pour c&eacute;l&eacute;brer la nouvelle ann&eacute;e. Les spectateurs y assistent par milliers, toutes g&eacute;n&eacute;rations confondues.</p>
+            <h2>Le carnaval Guyannais</h2>
+            <div class="blocDiapo">
+				<div class="diapo scroll">
+					<img src="../img/culture1.jpg" style="width:100%">
+				</div>
+				<div class="diapo scroll">
+					<img src="../img/culture2.jpg" style="width:100%">
+				</div>
+				<div class="diapo scroll">
+					<img src="../img/culture3.jpg" style="width:100%">
+				</div>
+				<div class="Arrows">
+						<i id="Prev" onclick="diapoPrecedente()"><img src="../img/leftArrow.png" style="width:100%"></i>
+						<i id="Next" onclick="diapoSuivante()"><img src="../img/rightArrow.png" style="width:100%"></i>
+				</div>
+			</div>
+			<div style="text-align:center">
+				<span class="point"></span> 
+				<span class="point"></span> 
+				<span class="point"></span> 
+			</div>
+            <p>Les principales d&eacute;monstration de la culture guyanaise se divisent en 3 activit&eacute;s pr&eacute;cises, les costumes, les musiques et les danses. Les costumes utilis&eacute;s sont les touloulous et tololos, masquant le corps entier et utilisant g&eacute;n&eacute;ralement des couleurs chaudes. Ceux-ci varient tous les ans, selon le th&egrave;me sp&eacute;cifique abord&eacute; par le festival. Les musiques jou&eacute;es sont principalement des oeuvres locales, pr&eacute;f&eacute;rant l&rsquo;utilisation de percussion et de cuivre. Les danses locales y sont pratiqu&eacute;s, le kas&eacute;ko et le Awasa sont les deux danses les plus connues.</p>
+        </div>
+		<script type="text/javascript" src="../js/script.js"></script>
+        <script src="../js/slideshow.js"></script>
+	</body>
+</html>

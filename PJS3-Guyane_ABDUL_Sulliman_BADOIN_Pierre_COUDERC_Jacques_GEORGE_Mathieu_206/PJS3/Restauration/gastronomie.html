@@ -1,0 +1,116 @@
+<html> 
+	<meta charset="UTF-8">
+	<head>
+		<meta charset="UTF-8">	
+		<title>Gastronomie</title>
+		<link rel='stylesheet' href="../css/styleGlobal.css" />
+		<link rel='stylesheet' href="../css/menu.css" />
+		<link rel='stylesheet' href="../css/diapo.css" />
+		<link rel='stylesheet' href="../css/Gastronomie.css" />
+	</head>
+		
+	<body>
+		<header>
+			<div class="menu">
+				<div class="headMenu">
+                    <a href="../accueil.html"><img src="../img/logo_petit.png" alt="Logo"></a>
+					<h1>Guyane Tour</h1>
+                    <div class="buttonMenu">
+                        <a href="javascript:void(0)" class="icon" onclick="unroll();">&#9776;</a>
+                    </div>
+				</div>
+				<div class="containerMenu" id="menu">
+					<div class="onglet currentOnglet">
+						<a href="../accueil.html">ACCUEIL</a>
+					</div>
+					<div class="onglet">
+						<a>RESTAURATION</a>
+						<ul class="sousMenu">
+							<li><a href="gastronomie.html">Gastronomie</a></li>
+						</ul>
+					</div>
+					<div class="onglet">
+						<a>TOURISME</a>
+						<ul class="sousMenu">
+							<li><a href="../Tourisme/lieuxavisiter.html">Lieux &agrave; visiter</a></li>
+						</ul>
+					</div>
+					<div class="onglet">
+						<a>LE PATRIMOINE</a>
+						<ul class="sousMenu">
+							<li><a href="../Patrimoine/patrimoine_naturel.html">Patrimoine naturel</a></li>
+							<li><a href="../Patrimoine/patrimoine_culturel.html">Patrimoine culturel</a></li>
+						</ul>
+					</div>
+				</div>
+                <div class="wrapperMenuSM">
+                    <div class="containerMenu" id="menuSM" style="display : none;">
+                        <div class="onglet currentOnglet">
+                            <a href="../accueil.html">ACCUEIL</a>
+                        </div>
+                        <div class="onglet">
+                            <a>RESTAURATION</a>
+                            <ul class="sousMenu">
+                                <li><a href="gastronomie.html">Gastronomie</a></li>
+                            </ul>
+                        </div>
+                        <div class="onglet">
+                            <a>TOURISME</a>
+                            <ul class="sousMenu">
+                                <li><a href="../Tourisme/lieuxavisiter.html">Lieux &agrave; visiter</a></li>
+                            </ul>
+                        </div>
+                        <div class="onglet">
+                            <a>LE PATRIMOINE</a>
+                            <ul class="sousMenu">
+                                <li><a href="../Patrimoine/patrimoine_naturel.html">Patrimoine naturel</a></li>
+                                <li><a href="../Patrimoine/patrimoine_culturel.html">Patrimoine culturel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</header>
+		<div id="page">
+		
+			<h1>Présentation de la gastronomie guyanaise</h1>
+			<h2>La gastronomie guyanaise est une melting-pot de plat étrangers. Du colombo indien au lumpia javanais, en passant par le manioc amérindien ou le riz cantonais chinois, toutes les gastronomies du monde sont revisitées à la sauce créole.</h2>
+				
+			<div class="blocDiapo">
+				<div class="diapo scroll">
+					<img src="../img/gastronomie2.jpg" style="width:100%">
+				</div>
+				<div class="diapo scroll">
+					<img src="../img/gastronomie4.jpg" style="width:100%">
+				</div>
+				<div class="diapo scroll">
+					<img src="../img/gastronomie5.jpg" style="width:100%">
+				</div>
+				<div class="Arrows">
+						<i id="Prev" onclick="diapoPrecedente()"><img src="../img/leftArrow.png" style="width:100%"></i>
+						<i id="Next" onclick="diapoSuivante()"><img src="../img/rightArrow.png" style="width:100%"></i>
+					</div>
+			</div>
+			<div style="text-align:center">
+				<span class="point"></span> 
+				<span class="point"></span> 
+				<span class="point"></span> 
+			</div>
+			<p>Par ailleurs, la guyane possède ses propres plats, d'origine businenge (peuples descendant des premiers esclaves) pour la plupart, ils sont en grande partie commun avec les autres colonies européennes proche, comme le Suriname ou les antilles, connu comme la gastronomie Créole. On y retrouve toute sorte de plat à base de viande ou gibier local accompagné de riz et de haricots.</p>
+			
+			<div id="piment" class="sideTextImg">
+				<p>La guyane est principalement connue pour le fameux piment de Cayenne. Ce qui est moins connu c’est qu’il existe deux type de piments dit “de Cayenne” : L’un fort comme du Tabasco (jusqu’à 50 000 sur l’échelle de Scoville*) et l’autre doux comme du paprika (2 500 à 5 000 sur cette même échelle). Le second est à tort nommé ainsi car il vient en réalité d’amérique centrale (entre la Colombie et le Mexique).</p>
+
+				<img src="../img/gastronomie3.jpg" alt="plat de piment" style="width:380px; height: 380px; border-style: solid; border-color: green; border-width: 4px">
+			</div>
+			
+			<div id="bouillon" class="sideImgText">
+				<img src="../img/gastronomie1.png" alt="bouillon d'awara" style="width:397; height: 294px; border-style: solid; border-color: green; border-width: 4px">
+				<p> Cependant, la région possède son propre plat régional : le bouillon d'awara. Il est composé de divers viande, salaison et légume et se prépare la veille. Chaque année, un grand concour vise à récompenser le meilleur bouillon.</p>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="../js/script.js"></script>
+        <script src="../js/slideshow.js"></script>
+	</body>
+</html>

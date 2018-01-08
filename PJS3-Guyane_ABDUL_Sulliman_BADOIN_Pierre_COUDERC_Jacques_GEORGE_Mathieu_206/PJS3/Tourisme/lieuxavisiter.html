@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lieux à visiter</title>
+		<link rel="icon" type="image/png" href="../favicon.png" />
+        <link rel="stylesheet" href="../css/styleGlobal.css"/>
+		<link rel="stylesheet" href="../css/menu.css"/>
+		<link rel="stylesheet" href="../css/diapo.css"/>
+		<link rel="stylesheet" href="../css/lieuxavisiter.css"/>
+    </head>
+		
+	<body>
+		<header>
+			<div class="menu">
+				<div class="headMenu">
+                    <a href="../accueil.html"><img src="../img/logo_petit.png" alt="Logo"></a>
+					<h1>Guyane Tour</h1>
+                    <div class="buttonMenu">
+                        <a href="javascript:void(0)" class="icon" onclick="unroll();">&#9776;</a>
+                    </div>
+				</div>
+				<div class="containerMenu" id="menu">
+					<div class="onglet currentOnglet">
+						<a href="../accueil.html">ACCUEIL</a>
+					</div>
+					<div class="onglet">
+						<a>RESTAURATION</a>
+						<ul class="sousMenu">
+							<li><a href="../Restauration/gastronomie.html">Gastronomie</a></li>
+						</ul>
+					</div>
+					<div class="onglet">
+						<a>TOURISME</a>
+						<ul class="sousMenu">
+							<li><a href="lieuxavisiter.html">Lieux &agrave; visiter</a></li>
+						</ul>
+					</div>
+					<div class="onglet">
+						<a>LE PATRIMOINE</a>
+						<ul class="sousMenu">
+							<li><a href="../Patrimoine/patrimoine_naturel.html">Patrimoine naturel</a></li>
+							<li><a href="../Patrimoine/patrimoine_culturel.html">Patrimoine culturel</a></li>
+						</ul>
+					</div>
+				</div>
+                <div class="wrapperMenuSM">
+                    <div class="containerMenu" id="menuSM" style="display : none;">
+                        <div class="onglet currentOnglet">
+                            <a href="../accueil.html">ACCUEIL</a>
+                        </div>
+                        <div class="onglet">
+                            <a>RESTAURATION</a>
+                            <ul class="sousMenu">
+                                <li><a href="../Restauration/gastronomie.html">Gastronomie</a></li>
+                            </ul>
+                        </div>
+                        <div class="onglet">
+                            <a>TOURISME</a>
+                            <ul class="sousMenu">
+                                <li><a href="lieuxavisiter.html">Lieux &agrave; visiter</a></li>
+                            </ul>
+                        </div>
+                        <div class="onglet">
+                            <a>LE PATRIMOINE</a>
+                            <ul class="sousMenu">
+                                <li><a href="../Patrimoine/patrimoine_naturel.html">Patrimoine naturel</a></li>
+                                <li><a href="../Patrimoine/patrimoine_culturel.html">Patrimoine culturel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</header>
+		<div id="page">
+			<h1>Notre sélection de lieux incontournables</h1>
+			
+			<div id="entete">
+				<p> La Guyane est un vaste territoire, ce qui rend sa découverte longue et difficile.<br>               
+					Grâce à notre sélection, découvrez les meilleurs lieux de ce pays pour organiser votre séjour!</p>
+			</div>
+			<h2>La réserve naturelle de Kaw-Roura</h2>
+			<br>
+			
+			<div class="blocDiapo">
+				<div class="diapo scroll">
+					<div class="txtDiapoKR">Cette splendide réserve naturelle grande de 100 000 hectares,
+							est un des lieux phares de la Guyane.
+						</div>
+						
+					<img src="../img/lieuxavisiter1.jpg" style="width:100%">
+				</div>
+				<div class="diapo scroll">
+					<img src="../img/lieuxavisiter2.jpg" style="width:100%">
+				</div>
+				<div class="diapo scroll">
+					<img src="../img/lieuxavisiter3.jpg" style="width:100%">
+				</div>
+				<div class="Arrows">
+						<i id="Prev" onclick="diapoPrecedente()"><img src="../img/leftArrow.png" style="width:100%"></i>
+						<i id="Next" onclick="diapoSuivante()"><img src="../img/rightArrow.png" style="width:100%"></i>
+				</div>
+			</div>
+			<div style="text-align:center">
+				<span class="point"></span> 
+				<span class="point"></span> 
+				<span class="point"></span> 
+			</div>
+			<br>
+			<p>Situé au sud-est de Cayenne, vous pourrez y rencontrer de nombreuses espèces d’oiseaux, de mammifères, d'amphibiens et de plantes rares, en voie de disparition.
+
+			Les marécages sont traversables à l’aide de pirogues et vous permettront d’explorer de nombreux paysages uniques au monde pour un séjour inoubliable.</p>
+			
+			<a href="https://marais-kaw.com/visiter/" target="_blank"><button>En apprendre plus sur la visite</button></a>
+			<br><br><br><br><br>
+			
+			<h2>Le Centre Spatial de Kourou</h2>
+			<p>De par son emplacement géographique avantageux, la Guyane constitue un site de lancement spatial optimal.</p>
+			
+			<div class="blocDiapo">
+				<div class="diapo scroll">
+					<div class="txtDiapoKR">Le centre spatial de Kourou est notamment connu pour les lancements d'Ariane 5, Vegaz et Soyouz.
+						</div>
+						
+					<img src="../img/lieuxavisiter4.jpg" style="width:100%">
+				</div>
+				<div class="diapo scroll">
+					<img src="../img/lieuxavisiter5.jpg" style="width:100%">
+				</div>
+				<div class="diapo scroll">
+					<img src="../img/lieuxavisiter6.jpg" style="width:100%">
+				</div>
+				<div class="Arrows">
+						<i id="Prev" onclick="diapoPrecedente()"><img src="../img/leftArrow.png" style="width:100%"></i>
+						<i id="Next" onclick="diapoSuivante()"><img src="../img/rightArrow.png" style="width:100%"></i>
+				</div>
+			</div>
+			<div style="text-align:center">
+				<span class="point"></span> 
+				<span class="point"></span> 
+				<span class="point"></span> 
+			</div>
+			
+			<p>Depuis ce centre, les fusées lancées sont destinés à la télécommunication. Vous pourrez y découvrir les impressionnantes infrastructures de la station. 
+				Les commentaires de nos guides expérimentés aideront les plus néophytes d’entre vous. Cette visite ravira les plus curieux d’entre vous !</p>
+			<a href="http://www.cnes-csg.fr/web/CNES-CSG-fr/9822-visiter-la-base.php" target="_blank"><button>En apprendre plus sur la visite</button></a>
+			<br><br><br><br><br>
+			
+			<h2>Le Zoo de Guyane</h2>
+			<p>Situé à Macouria dans une zone marécageuse et de savane, cet endroit est propice à la faune présente dans ce zoo.</p>
+			<div class="blocDiapo">
+				<div class="diapo scroll">	
+					<img src="../img/lieuxavisiter7.jpg" style="width:100%">
+				</div>
+				<div class="diapo scroll">
+					<img src="../img/lieuxavisiter8.jpg" style="width:100%">
+				</div>
+				<div class="diapo scroll">
+					<img src="../img/lieuxavisiter9.jpg" style="width:100%">
+				</div>
+				<div class="Arrows">
+						<i id="Prev" onclick="diapoPrecedente()"><img src="../img/leftArrow.png" style="width:100%"></i>
+						<i id="Next" onclick="diapoSuivante()"><img src="../img/rightArrow.png" style="width:100%"></i>
+				</div>
+			</div>
+			<div style="text-align:center">
+				<span class="point"></span> 
+				<span class="point"></span> 
+				<span class="point"></span> 
+			</div>
+			
+			<p>Ce parc de 75 hectares protège de nombreuses espèces rares et protégées. Plus de 450 individus issus des espèces locales sont observables dans un milieu adéquat. 
+			Cette réserve naturelle permet aux visiteurs d’explorer la faune guyanaise pour un prix abordable. A noter que le billet d’entrée est valable 1 an.
+			Le parcours balisé à travers les arbres vous assure une balade de 2 heures complète et inoubliable à travers une forêt magnifique.</p>
+			<a href="http://www.zoodeguyane.com/planifiez-votre-visite/" target="_blank"><button>En apprendre plus sur la visite</button></a>
+		</div>
+		<script src="../js/slideshow.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
+	</body>
+</html>
